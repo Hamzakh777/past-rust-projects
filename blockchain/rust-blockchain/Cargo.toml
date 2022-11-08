@@ -1,0 +1,19 @@
+[package]
+authors = ["hamzakh777 <hamzabitup@gmail.com>"]
+edition = "2018"
+name = "rust-blockchain"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hex = "0.4.3"
+crypto-hash = "0.3.4"
+
+[lib]
+name = "blockchainlib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "blockchain"
+path = "src/main.rs"
